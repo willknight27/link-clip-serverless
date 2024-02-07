@@ -1,0 +1,14 @@
+{
+    "header": "# Link Clip\n\nLos cambios realizados serán detallados en este archivo.",
+    "releaseCommitMessageFormat": "chore(release): New version - {{currentTag}}",
+    "types": [
+        {"type": "feat", "section": "Features"},
+        {"type": "fix", "section": "Bug Fixes"},
+        {"type": "chore", "section": "Chores", "hidden": false},
+        {"type": "docs", "section": "Documentation", "hidden": false},
+        {"type": "style", "section": "Styles", "hidden": false},
+        {"type": "refactor", "section": "Refactors", "hidden": false},
+        {"type": "perf", "section": "Performance Improvements", "hidden": false},
+        {"type": "test", "section": "Tests", "hidden": false}
+    ]
+} 

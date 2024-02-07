@@ -1,0 +1,39 @@
+{
+  "name": "link-clip",
+  "version": "0.0.0",
+  "description": "Link Clip serverless functions",
+  "main": "app.ts",
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
+    "netlify:login": "netlify login",
+    "netlify:dev": "netlify dev",
+    "netlify:prod": "netlify deploy --prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "commit-and-tag-version",
+    "release:version": "commit-and-tag-version --release-as"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willknight27/link-clip-serverless.git"
+  },
+  "author": "Williams Caballero Araya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willknight27/link-clip-serverless/issues"
+  },
+  "homepage": "https://github.com/willknight27/link-clip-serverless#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "commit-and-tag-version": "^12.2.0",
+    "netlify-cli": "^17.16.0",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.5.1"
+  }
+}
