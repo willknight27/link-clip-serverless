@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/willknight27/link-clip-serverless#readme",
   "devDependencies": {
+    "@types/cheerio": "^0.22.35",
     "@types/node": "^20.11.16",
     "commit-and-tag-version": "^12.2.0",
     "netlify-cli": "^17.16.0",
@@ -34,6 +35,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@netlify/functions": "^2.5.1"
+    "@netlify/functions": "^2.5.1",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12"
   }
 }

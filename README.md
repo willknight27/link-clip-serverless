@@ -7,6 +7,16 @@
 npm install @netlify/functions
 ```
 
+axios
+```bash
+npm installl axios
+```
+
+cheerio
+```bash
+npm install cheerio
+```
+
 ## Dev dependencies
 
 * typescript
@@ -21,6 +31,11 @@ npm install -D typescript @types/node ts-node-dev rimraf commit-and-tag-version
 * netlify/cli
 ```bash
 npm install -D netlify-cli 
+```
+
+* @types/cheerio
+```bash
+npm install --save-dev @types/cheerio
 ```
 
 ##  TypeScript config (tsconfig.json)
