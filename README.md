@@ -1,5 +1,17 @@
 # Link Clip - Serverless functions
 
+# Serverless Project for URL Data Extraction
+
+This project is developed in Node.js using TypeScript and follows a serverless architecture. It's responsible for extracting relevant data from a given URL, such as the title, description, main image, and domain.
+
+## Installation
+
+To install and run this project locally, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Ensure you have Node.js and npm installed.
+3. Install dependencies
+
 ## Dependencies
 
 * @netlify/functions
