@@ -12,6 +12,25 @@ To install and run this project locally, follow these steps:
 2. Ensure you have Node.js and npm installed.
 3. Install dependencies
 
+## Using the Function
+
+You can utilize the function to extract data from a provided URL by sending a GET request to the function URL with the `url` parameter containing the URL you wish to process. Below is an example of how to do this:
+
+### **GET** :  https://example-domain/.netlify/functions/getUrlData?url=https://www.youtube.com/watch?v=4xDzrJKXOOY
+### Expected Response
+
+The function will respond with a JSON object containing the extracted information from the provided URL:
+
+```json
+{
+  "title": "synthwave radio 🌌 - beats to chill/game to - YouTube",
+  "description": "🎼 | Listen on Spotify, Apple music and more→  https://fanlink.tv/ChillSynthwave🎶 | Subscribe to this channel for more synthwave music→  https://bit.ly/synt...",
+  "source": "https://www.youtube.com/watch?v=4xDzrJKXOOY",
+  "img": "https://i.ytimg.com/vi/4xDzrJKXOOY/maxresdefault_live.jpg",
+  "domain": "https://www.youtube.com"
+}
+```
+
 ## Dependencies
 
 * @netlify/functions
