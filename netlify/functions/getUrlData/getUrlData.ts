@@ -1,10 +1,14 @@
 import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
-import { httpClientAdapter } from "../../../src/plugins/http.adapter";
-import { UrlData } from "../../../src/domain/use-cases/url-data.use-case";
 import { functionHeaders } from "../../../src/config/headers.config";
 
-// Caso de uso
-const urlData = new UrlData();
+import { HtmlParserAdapter } from "../../../src/infrastructure/adapters/html-parse.adapter";
+import { UrlData } from "../../../src/application/use-cases/get-url-data-use-case";
+import { HttpClientAdapter } from "../../../src/infrastructure/adapters/http.adapter";
+
+// Inyeccion de dependencias
+const httpClientAdapter = new HttpClientAdapter()
+const htmlParserAdapter = new HtmlParserAdapter()
+const urlData = new UrlData(htmlParserAdapter);
 
 export const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
 
