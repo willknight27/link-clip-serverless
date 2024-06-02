@@ -1,6 +1,13 @@
 # Link Clip
 
 Los cambios realizados serán detallados en este archivo.
+## [0.1.1](https://github.com/willknight27/link-clip-serverless/compare/v0.1.0...v0.1.1) (2024-06-02)
+
+
+### Refactors
+
+* Implementar Clean Architecture ([b9fc472](https://github.com/willknight27/link-clip-serverless/commit/b9fc472709988bd26196feaf4bd410ed41bc212c))
+
 ## [0.1.0](https://github.com/willknight27/link-clip-serverless/compare/v0.0.1...v0.1.0) (2024-02-08)
 
 
